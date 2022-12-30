@@ -13,16 +13,16 @@
             <div class="list-unstyled main-header-two__top-menu">
                 <div>
                     <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img style="width: 24px" src="../assets/images/flags/uz.svg" alt="">
+                        <img style="width: 24px" src="../../assets/images/flags/uz.svg" alt="">
                         O'zbek
                     </button>
                     <div class="dropdown-menu" style="">
                         <span href="#" class="dropdown-item">
-                            <img style="width: 24px" src="../assets/images/flags/us.svg" alt="">
+                            <img style="width: 24px" src="../../assets/images/flags/us.svg" alt="">
                             English
                         </span>
                         <span href="https://myinsurance.uz/lang/ru" class="dropdown-item">
-                            <img style="width: 24px" src="../assets/images/flags/ru.svg" alt="">
+                            <img style="width: 24px" src="../../assets/images/flags/ru.svg" alt="">
                             русский
                         </span>
                     </div>
@@ -53,7 +53,7 @@
                 <div class="main-header-two__top-details-inner">
                     <div class="main-header-two__logo">
                         <a href="#">
-                            <img src="../assets/images/resources/logo.png" alt="" style="width:150px">
+                            <img src="../../assets/images/resources/logo.png" alt="" style="width:150px">
                         </a>
                     </div>
                     <ul class="list-unstyled main-header-two__top-details-list">
