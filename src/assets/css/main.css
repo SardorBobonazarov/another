@@ -9,10 +9,24 @@
 a{
     text-decoration: none !important;
 }
+ul, ol{
+    padding-left: 0 !important;
+}
 ul, ol, li{
     margin: 0;
+}
+p{
     margin-bottom: 0 !important;
 }
 body{
     overflow-x: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1200px !important;
+    }
+}
+.container{
+    padding: 0 15px !important;
 }

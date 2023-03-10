@@ -1,0 +1,39 @@
+.service{
+    position: relative;
+    background-color: rgb(38, 27, 27);
+    color: #fff;
+    padding: 120px 0 90px;
+    .service-shape{
+        position: absolute;
+        inset: 0;
+        background-position: center;
+        background-size: cover;
+        opacity: .02;
+    }
+    .container{
+        .subtitle{
+            display: flex;
+            align-items: center;
+            p{
+                margin-bottom: 0;
+                margin: 0 10px;
+                font-weight: 700;
+                font-size: 16px;
+                color: #97a2b7;
+            }
+        }
+        h2{
+            font-size: 45px;
+            font-weight: 700;
+        }
+        .col-xl-6:nth-child(2){
+            .second-text{
+                margin: 14px 0 0 70px;
+                p{
+                    color: #97a2b7;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,10 @@
         :slidesPerView="1"
         :spaceBetween="30"
         :loop="true"
+        :autoplay="{
+            delay: 5000,
+            disableOnInteraction: false,
+        }"
         :pagination="{
             clickable: true,
         }"
@@ -39,9 +43,9 @@
     import { Swiper, SwiperSlide } from "swiper/vue";
     import "swiper/css";
     import "swiper/css/navigation";
-    import { Navigation } from "swiper";
+    import { Navigation, Autoplay } from "swiper";
 
-    const modules = [Navigation]
+    const modules = [Navigation, Autoplay]
 </script>
 
 <script>

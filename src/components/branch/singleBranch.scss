@@ -1,0 +1,58 @@
+.branch{
+    background-color: #fff;
+    min-height: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    &:hover{
+        .name{
+            i{
+                color: rgb(207, 172, 108);
+            }
+        }
+    }
+    .name{
+        display: flex;
+        align-items: center;
+        i{
+            transition: .5s ease;
+            font-size: 40px;
+        }
+        h4{
+            font-size: 16px;
+            font-weight: 700;
+            margin-left: 20px;
+            padding-top: 10px;
+        }
+    }
+    .data{
+        div{
+            margin-top: 10px;
+        }
+        span{
+            font-weight: 500;
+        }
+    }
+    .map{
+        position: absolute;
+        bottom: 15px;
+        padding: 0 5px 15px;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 200px;
+        height: 40px;
+        background-color: #0d6efd;
+        transition: .5s ease;
+            &:hover{
+                background-color: #084eb7;    
+            }
+        a{
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: #fff;
+        }
+    }
+}

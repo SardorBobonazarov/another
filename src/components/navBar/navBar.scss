@@ -2,15 +2,24 @@
     padding: 10px 0;
     background-color: #fff;
     .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .nav-one p{
-            font-size: 13px;
-            letter-spacing: -.2px;
-            color: #696e77;
-            i, span{
-                color: rgb(38, 27, 27);
+        .nav-one__inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                font-size: 13px;
+                letter-spacing: -.2px;
+                color: #696e77;
+                margin-bottom: 0;
+                i, span{
+                    color: rgb(38, 27, 27);
+                }
+            }
+            .lang{
+                margin-right: 30px;
+                select{
+                    min-width: 120px;
+                }
             }
         }
     }
@@ -26,6 +35,14 @@
             text-align: center;
             color: #fff;
         }
+    }
+}
+.container{
+    padding: 0 15px;
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
     }
 }
 .nav-two {
@@ -75,9 +92,19 @@
 
 
 .main-menu-two{
-    margin-top: -35px;
     position: relative;
-    display: block;
+    z-index: 22;
+    width: 100vw;
+}
+.main-menu-two__wrapper{
+    position: absolute;
+    top: -35px;
+    left: -20px;
+    width: 100vw;
+    .container{
+        display: flex;
+        justify-content: center;
+    }
     a{
         color: #696e77;
         font-weight: bold;
@@ -95,9 +122,10 @@
         .main-menu-two__left {
             display: block;
             float: left;
+            position: relative;
+            height: 74px;
             .mobile-nav__toggler {
                 font-size: 20px;
-                color: var(--insur-white);
                 cursor: pointer;
                 -webkit-transition: 500ms;
                 transition: 500ms;
@@ -105,6 +133,8 @@
             }
             ul{
                 display: flex;
+                align-items: center;
+                justify-content: space-between;
                 li{
                     padding: 22px 0;
                     &:not(:first-child){
@@ -121,36 +151,27 @@
                         top: 100%;
                         left: 0;
                         min-width: 250px;
-                        -webkit-box-orient: vertical;
-                        -webkit-box-direction: normal;
-                        -ms-flex-direction: column;
                         flex-direction: column;
-                        -webkit-box-pack: start;
-                        -ms-flex-pack: start;
-                        justify-content: flex-start;
-                        -webkit-box-align: start;
-                        -ms-flex-align: start;
-                        align-items: flex-start;
+                        justify-content: center;
+                        align-items: center;
                         opacity: 0;
                         visibility: hidden;
-                        -webkit-transform-origin: top center;
                         transform-origin: top center;
-                        -webkit-transform: scaleY(0) translateZ(100px);
                         transform: scaleY(0) translateZ(100px);
-                        -webkit-transition: opacity 500ms ease, visibility 500ms ease, -webkit-transform 700ms ease;
-                        transition: opacity 500ms ease, visibility 500ms ease, -webkit-transform 700ms ease;
                         transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease;
-                        transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease, -webkit-transform 700ms ease;
                         z-index: 99;
                         background-color: #fff;
                         overflow: hidden;
                         box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 7%);
                         border-radius: 0;
-                        padding: 31px 20px 31px;
+                        padding: 31px 20px;
                         li{
-                            margin-left: 0 !important;
                             width: 100%;
                             padding: 10px 0;
+                            margin-right: 20px;
+                            &:first-child{
+                                margin-left: 40px;
+                            }
                             a{
                                 position: relative;
                                 display: flex;
@@ -187,13 +208,31 @@
         position: relative;
         display: block;
         float: right;
+        width: 200px;
         .main-menu-two__search-box-get-quote {
             position: relative;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             .main-menu-two__search-box{
-                margin-right: 30px;
-                padding: 25px 0;
+                padding: 25px 0 25px 20px;
+                position: relative;
+                margin-left: 20px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 20%;
+                    left: -10px;
+                    width: 2px;
+                    height: 60%;
+                    background-color: rgba(0, 0, 0, .1);
+                }
+                a{
+                    i{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
             }
             .main-menu-two__get-quote-btn {
                 padding-top: 25px !important;

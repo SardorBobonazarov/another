@@ -1,0 +1,178 @@
+@media screen and (width < 1200px) {
+    header{
+        nav{
+            &.intersecting{
+                .clearfix{
+                    .container{
+                        .clearfix{
+                            .main-menu-two__left{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .main-menu-two__main-menu-box{
+                                    a{
+                                        display: block;
+                                    }
+                                    ul{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper{
+            .swiper-wrapper{
+                .single-swiper{
+                    background-position: 70%;
+                }
+            }
+        }
+        .slider-nav{
+            left: 90% !important;
+            top: 60% !important; 
+        }
+    }
+    .main-menu{
+        .nav-three{
+            .container{
+                justify-content: space-between;
+                .main-menu-two__wrapper-inner{
+                    width: 100%;
+                    .main-menu-two__left{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .main-menu-two__main-menu-box{
+                            ul{
+                                display: none;
+                            }
+                            a{
+                                display: block;
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        .container{
+            .row{
+                .col-xl-5{
+                    max-width: 600px;
+                    padding: 0 0;
+                    .image{
+                        min-width: 600px;
+                        margin: 60px 0 52px;
+                        .awards{
+                            left: 0;
+                        }
+                        .dots{
+                            left: -60px;
+                        }
+                    }
+                }
+                .col-xl-2{
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+    .order{
+        .container{
+            .row{
+                .col-xl-5{
+                    display: none;
+                }
+                .col-xl-7{
+                    .text{
+                        margin-bottom: 50px;
+                    }
+                    .form{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        &::before{
+            left: 40px !important;
+        }
+    }
+}
+
+@media screen and (width < 992px){
+    header{
+        nav{
+            &.nav-one{
+                display: none;
+            }
+            &.nav-two{
+                .main-header-two__top-details{
+                    .container{
+                        .main-header-two__top-details-inner{
+                            justify-content: center;
+                            ul{
+                                &.list-unstyled.main-header-two__top-details-list{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slider-nav{
+        top: 50% !important;
+        i{
+            color: rgba(255, 255, 255, .2) !important;
+            border-color: rgba(255, 255, 255, .2) !important;
+        }
+    }
+    .service{
+        .container{
+            .row{
+                .col-xl-6{
+                    .second-text{
+                        margin: 14px 0 40px 0 !important;
+                    }
+                }
+            }
+        }
+    }
+    .process{
+        .process-inner{
+            .process-shape{
+                display: none;
+            }
+            .row{
+                .col-xl-3{
+                    .singleProcess{
+                        margin-top: 20px !important;
+                        margin-bottom: 40px !important;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (width < 576px){
+    .order{
+        .container{
+            .row{
+                .col-xl-7{
+                    .form{
+                        flex-direction: column;
+                        .tabs{
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

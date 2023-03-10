@@ -1,0 +1,53 @@
+.appeals{
+    padding: 120px 0;
+    p{
+        color: #696e77;
+        margin-bottom: 16px !important;
+    }
+    .container{
+        .image{
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .text{
+            .row{
+                .col-xl-8{
+                    .header{
+                        font-weight: bolder;
+                    }
+                    .person{
+                        .position{
+                            margin-bottom: 0 !important;
+                            text-decoration: underline;
+                            font-weight: 600;
+                        }
+                        .name{
+                            text-decoration: underline;
+                            font-weight: 600;
+                        }
+                        .days{
+                            p{
+                                display: flex;
+                                width: 300px;
+                                justify-content: space-between;
+                                &:first-child{
+                                    margin-bottom: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    .date{
+                        float: right;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

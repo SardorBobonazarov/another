@@ -1,0 +1,68 @@
+.opinions{
+    background-image: url('src/assets/images/shapes/testimonial-two-shape-1.png');
+    padding: 120px 0 90px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container{
+        .row{
+            .col-xl-6{
+                .title{
+                    .subtitle{
+                        display: flex;
+                        align-items: center;
+                        p{
+                            margin-bottom: 0;
+                            letter-spacing: 2px;
+                            margin: 0 10px;
+                            font-weight: 700;
+                            font-size: 16px;
+                        }
+                    }
+                    h2{
+                        font-weight: 700;
+                        font-size: 45px;
+                        max-width: 700px;
+                        margin: 10px auto;
+                    }
+                }
+                p.unique-text{
+                    color: #696e77;
+                    line-height: 30px;
+                    margin-top: 28px;
+                }
+                ul{
+                    margin-top: 37px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        &:not(:first-child){
+                            margin-top: 31px;
+                        }
+                        &:hover i{
+                            background-color: rgb(38, 27, 27);
+                            color: #fff;
+                        }
+                        i{
+                            transition: .5s ease;
+                            margin-right: 20px;
+                            background-color: #fff;
+                            height: 43px;
+                            width: 43px;
+                            box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 5%);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+            .col-xl-6{
+                .swiper{
+                    max-height: 100vh;
+                }
+            }
+        }
+    }
+}

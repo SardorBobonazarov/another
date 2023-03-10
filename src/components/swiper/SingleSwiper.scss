@@ -1,12 +1,12 @@
 div.container{
     position: relative;
-    top: 40%;
-    left: 10vw;
+    top: 20%;
+    left: min(8em, 100px);
     z-index: 3;
     &::before{
         position: absolute;
         content: "";
-        top: 40px;
+        top: 240px;
         left: 15px;
         height: 140px;
         width: 4px;
@@ -14,12 +14,16 @@ div.container{
     }
     h2{
         color: #fff;
+        font-size: 50px;
+        font-weight: 700;
+        max-width: 100px;
     }
     p{
         color: rgba(255, 255, 255, .6);
+        margin-top: 20px;
         margin-left: 30px;
         line-height: 30px;
-        padding-bottom: 46px;
+        padding-bottom: 26px;
     }
     a{
         margin-left: 30px;

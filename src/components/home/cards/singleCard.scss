@@ -1,0 +1,100 @@
+.single-card{
+    padding: 0 15px;
+    cursor: pointer;
+    transition: .7s ease;
+    position: relative;
+    &:hover{
+        transform: translateY(-20px);
+        .image::before{
+            transform: scaleY(1);
+        }
+        .content::before{
+            transform: translateX(0);
+        }
+        .content .text p a{
+            color: #fff;
+            position: relative;
+            z-index: 44;
+        }
+    }
+    .image{
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        &::before{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: "";
+            border-radius: 10px;
+            background-color: rgba(1, 95, 201, .30);
+            -webkit-transition: all 500ms ease;
+            transition: all 500ms ease;
+            opacity: 1;
+            -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            z-index: 3;
+        }
+    }
+    .content{
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 10%);
+        margin-right: 70px;
+        margin-top: -55px;
+        display: flex;
+        align-items: center;
+        min-height: 100px;
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+        &::before{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgb(38, 27, 27);
+            transform: translateX(-100%);
+            transition: .5s ease;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(38, 27, 27);
+            height: 100px;
+            max-width: 84px;
+            width: 100%;
+            position: relative;
+            i{
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+        .text{
+            padding-left: 30px;
+            width: max-content;
+            display: flex;
+            align-items: center;
+            p{
+                margin-bottom: 0;
+                a{
+                    font-size: 20px;
+                    color: rgb(38, 27, 27);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
